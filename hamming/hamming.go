@@ -9,7 +9,8 @@ func Distance(a, b string) (int, error) {
 	a1 := strings.Split(a, "")
 	b1 := strings.Split(b, "")
 
-	if a1 == b1 {
+	if len(a1) != len(b1) {
+		return -1, nil
 	}
-
+	return 0, nil
 }
