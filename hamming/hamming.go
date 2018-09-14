@@ -24,16 +24,18 @@ func Distance(a, b string) (int, error) {
 	// (why error at all? buh)
 	distance := 0
 
-	for i := 0 ; i < len(a1) ; i++
-	{ if a1[i] == a2[i] {
-		distance = distance + 0
-	}
-	else if a1[i] != a2[i] {
-		distance++
-	}
+	for i := 0; i < len(a1); i++ {
+		{
+			if a1[i] == b1[i] {
+				continue
+			}
+			if a1[i] != b1[i] {
+				distance++
+			}
+		}
 
- return 0,nil
+		return distance, nil
 
-}
-	return 0, nil
+	}
+	return distance, nil
 }
