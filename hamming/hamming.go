@@ -1,6 +1,6 @@
 package hamming
 
-//import "errors"
+import "errors"
 import "strings"
 
 //import "fmt"
@@ -10,7 +10,7 @@ func Distance(a, b string) (int, error) {
 	b1 := strings.Split(b, "")
 
 	if len(a1) != len(b1) {
-		return -1, nil
+		return -1, errors.New("Strings are not equal.")
 	} else if a == b {
 		return 0, nil
 	}
@@ -34,7 +34,7 @@ func Distance(a, b string) (int, error) {
 			}
 		}
 
-		return distance, nil
+		//		return distance, nil
 
 	}
 	return distance, nil
