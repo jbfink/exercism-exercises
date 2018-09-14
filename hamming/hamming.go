@@ -11,10 +11,10 @@ import "strings"
 // same position, a counter is incremented. At the end of the loop,
 // return the contents of that counter.
 func Distance(a, b string) (int, error) {
-	a1 := strings.Split(a, "")
-	b1 := strings.Split(b, "")
+	strand1 := strings.Split(a, "")
+	strand2 := strings.Split(b, "")
 
-	if len(a1) != len(b1) {
+	if len(strand1) != len(strand2) {
 		return -1, errors.New("strings are not equal")
 	} else if a == b {
 		return 0, nil
@@ -22,12 +22,12 @@ func Distance(a, b string) (int, error) {
 
 	distance := 0
 
-	for i := 0; i < len(a1); i++ {
+	for i := 0; i < len(strand1); i++ {
 		{
-			if a1[i] == b1[i] {
+			if strand1[i] == strand2[i] {
 				continue
 			}
-			if a1[i] != b1[i] {
+			if strand1[i] != strand2[i] {
 				distance++
 			}
 		}
