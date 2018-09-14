@@ -9,7 +9,9 @@ import "fmt"
 // always reach 1 eventually.
 
 // so:
-// take n. Initial test for positive and test for integer. Test for evenness by modulo, like, divide by 2 == modulo 0? then even. Otherwise odd.
+// take n. Initial test for positive and test for integer. Test for evenness by modulo
+// divide by 2 == modulo 0? then even. Otherwise odd.
+//
 // Start loop with modulo test:
 // Is n 1? then exit.
 // path 1: even, divide by 2, return to 1 test
