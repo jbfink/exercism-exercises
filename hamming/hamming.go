@@ -15,7 +15,7 @@ func Distance(a, b string) (int, error) {
 	strand2 := strings.Split(b, "")
 
 	if len(strand1) != len(strand2) {
-		return -1, errors.New("strings are not equal")
+		return -1, errors.New("strings are not equal in length")
 	} else if a == b {
 		return 0, nil
 	}
