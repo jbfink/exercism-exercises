@@ -39,6 +39,12 @@ Convert a number to a string, the contents of which depend on the number's facto
 //	Is it modulo 0? Stick n into new array, factors[].
 //	Is it not modulo 0? Continue.
 //	Return factors[].
+// OR:::
+// You don't need to get the full range of factors -- you only need to test if there is 3, 5, 7. So instead:
+// loop: Does 3 modulo 0? then insert "Pling" into raindrop string.
+//	 Does 5 modulo 0? then insert "Plang" into raindrop string.
+// 	 Does 7 modulo 0? then insert "Plong" into raindrop string.
+//	 Are there no raindrops? Return i.
 
 import "fmt"
 
