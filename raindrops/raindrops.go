@@ -31,6 +31,15 @@ Convert a number to a string, the contents of which depend on the number's facto
 // go through each array element. If array element contains 3, 5, 7, append to new string the appropriate raindrop
 // at the end, return the raindrop string.
 
+// note: if you HAVE to write a fuckin' thing to get factors jesus christ something like this:
+// Take integer i
+// Generate array of all numbers between 1 to i
+// loop:
+// Divide i by array[n]
+//	Is it modulo 0? Stick n into new array, factors[].
+//	Is it not modulo 0? Continue.
+//	Return factors[].
+
 import "fmt"
 
 func HelloRaindrops() {
