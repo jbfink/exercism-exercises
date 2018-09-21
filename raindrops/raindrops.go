@@ -26,9 +26,9 @@ Convert a number to a string, the contents of which depend on the number's facto
 // Next, figure out how to get a factors of an integer. (look this up, it's probably in a math package))
 // Convert factors to array
 // No test will contain more than one pling or plang or plong, but could contain a combo of each or nothing at all.
-// in a possible loop:
 // First test if array does NOT contain 3, 5, 7. If so, *return* input.
-// Then go through each array element. If array element contains 3, 5, 7, append to new string the appropriate raindrop
+// in a loop:
+// go through each array element. If array element contains 3, 5, 7, append to new string the appropriate raindrop
 // at the end, return the raindrop string.
 
 import "fmt"
