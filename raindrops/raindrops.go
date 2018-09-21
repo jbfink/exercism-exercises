@@ -48,6 +48,9 @@ Convert a number to a string, the contents of which depend on the number's facto
 
 import "fmt"
 
-func HelloRaindrops() {
+// Raindrops function takes a single input, an integer. If the integer's factors contain a 3, it inserts "Pling" into a string.
+// If an integer's factors contain a 5, it inserts "Plang" into a string. If the integer's factors contain a 7, it
+// inserts "Plong" into a string. If the integer contains none of those, it returns the integer itself.
+func Raindrops(i int) {
 	fmt.Println("Hello Raindrops")
 }
