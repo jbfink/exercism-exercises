@@ -52,5 +52,16 @@ import "fmt"
 // If an integer's factors contain a 5, it inserts "Plang" into a string. If the integer's factors contain a 7, it
 // inserts "Plong" into a string. If the integer contains none of those, it returns the integer itself.
 func Raindrops(i int) {
-	fmt.Println("Hello Raindrops")
+	// building strings might be hard. see: https://stackoverflow.com/questions/1760757/how-to-efficiently-concatenate-strings-in-go
+	rain := ""
+	if i%3 == 0 {
+		fmt.Println("Pling")
+	}
+	if i%5 == 0 {
+		fmt.Println("Plang")
+	}
+	if i%7 == 0 {
+		fmt.Println("Plong")
+	}
+
 }
