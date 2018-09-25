@@ -46,7 +46,15 @@ Convert a number to a string, the contents of which depend on the number's facto
 // 	 Does 7 modulo 0? then insert "Plong" into raindrop string.
 //	 Are there no raindrops? Return i.
 
+// For building strings, from https://www.calhoun.io/concatenating-and-building-strings-in-go/
+// var b strings.Builder
+//  for i := 3; i >= 1; i-- {
+//   fmt.Fprintf(&b, "%d...", i)
+//  }
+//  b.WriteString("ignition")
+//  fmt.Println(b.String())
 import "fmt"
+import "strings"
 
 // Raindrops function takes a single input, an integer. If the integer's factors contain a 3, it inserts "Pling" into a string.
 // If an integer's factors contain a 5, it inserts "Plang" into a string. If the integer's factors contain a 7, it
