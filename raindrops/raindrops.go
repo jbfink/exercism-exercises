@@ -61,15 +61,18 @@ import "strings"
 // inserts "Plong" into a string. If the integer contains none of those, it returns the integer itself.
 func Raindrops(i int) {
 	// building strings might be hard. see: https://stackoverflow.com/questions/1760757/how-to-efficiently-concatenate-strings-in-go
-	rain := ""
+	var rain strings.Builder
 	if i%3 == 0 {
-		fmt.Println("Pling")
+		rain.WriteString("Pling ")
 	}
 	if i%5 == 0 {
-		fmt.Println("Plang")
+		rain.WriteString("Plang ")
 	}
 	if i%7 == 0 {
-		fmt.Println("Plong")
+		rain.WriteString("Plong")
 	}
-
+	if rain == "" {
+		return i
+	}
+	return rain
 }
