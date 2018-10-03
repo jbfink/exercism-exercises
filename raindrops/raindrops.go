@@ -64,10 +64,10 @@ func Convert(i int) string {
 	// building strings might be hard. see: https://stackoverflow.com/questions/1760757/how-to-efficiently-concatenate-strings-in-go
 	var rain strings.Builder
 	if i%3 == 0 {
-		rain.WriteString("Pling ")
+		rain.WriteString("Pling")
 	}
 	if i%5 == 0 {
-		rain.WriteString("Plang ")
+		rain.WriteString("Plang")
 	}
 	if i%7 == 0 {
 		rain.WriteString("Plong")
