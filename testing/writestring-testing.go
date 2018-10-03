@@ -5,9 +5,11 @@ import (
 	"strings"
 )
 
+//i := 3
+
 func Convert(i int) string {
 	var rain strings.Builder
-	rain.WriteString("")
+	//rain.WriteString("")
 	if i%3 == 0 {
 		rain.WriteString("Pling ")
 	}
