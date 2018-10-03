@@ -55,6 +55,7 @@ Convert a number to a string, the contents of which depend on the number's facto
 //  fmt.Println(b.String())
 //import "fmt"
 import "strings"
+import "strconv"
 
 // Raindrops function takes a single input, an integer. If the integer's factors contain a 3, it inserts "Pling" into a string.
 // If an integer's factors contain a 5, it inserts "Plang" into a string. If the integer's factors contain a 7, it
@@ -72,7 +73,7 @@ func Convert(i int) string {
 		rain.WriteString("Plong")
 	}
 	if rain.String() == "" {
-		return i
+		return strconv.Itoa(i)
 	}
 	return rain.String()
 }
