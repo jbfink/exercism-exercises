@@ -53,10 +53,8 @@ func Score(word string) int {
 	letter := strings.Split(word, "")
 	score := 0
 	for i := 0; i < len(letter); i++ {
-		// fix multiple-lookup error:
-		// https://stackoverflow.com/questions/28227095/multiple-values-in-single-value-context
 		score = score + Strip(Lookup(letter[i]))
-
 	}
+
 	return score
 }
