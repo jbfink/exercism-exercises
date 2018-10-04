@@ -35,5 +35,10 @@ And to total:
 
 */
 
+// adrplan:
+// first, an key-value store array thing for each letter, a=1, d=2 etc. Maybe in its own function, like func Lookup (s string) int
+// Then, split a word into letter chunks. Apply Lookup to each letter, storing the value in an int, adding the next letter value to the int.
+// Return the int.
+
 func Score(s string) int {
 }
