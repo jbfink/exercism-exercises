@@ -3,7 +3,8 @@ package scrabble
 import "strings"
 import "errors"
 
-// Lookup takes a single character (fix this so it refuses multiples, also downcase) and returns its Scrabble score
+// Lookup takes a single character and returns its Scrabble score. It downcases all input, and throws an error if it is passed more than
+// one letter.
 func Lookup(s string) (int, error) {
 	if len(s) != 1 {
 
