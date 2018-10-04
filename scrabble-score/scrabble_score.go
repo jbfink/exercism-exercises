@@ -39,6 +39,27 @@ And to total:
 // first, an key-value store array thing for each letter, a=1, d=2 etc. Maybe in its own function, like func Lookup (s string) int
 // Then, split a word into letter chunks. Apply Lookup to each letter, storing the value in an int, adding the next letter value to the int.
 // Return the int.
+func Lookup(s string) int {
+	switch s {
+	case
+		"a", "e", "i", "o", "u", "l", "n", "r", "s", "t":
+		return 1
+	case
+		"d", "g":
+		return 2
+	case
+		"b", "c", "m", "p":
+		return 3
+	case "f", "h", "v", "w", "y":
+		return 4
+	case "k":
+		return 5
+	case "j", "x":
+		return 8
+	case "q", "z":
+		return 10
+	}
+}
 
 func Score(s string) int {
 }
