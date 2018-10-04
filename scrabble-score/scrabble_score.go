@@ -40,26 +40,41 @@ And to total:
 // Then, split a word into letter chunks. Apply Lookup to each letter, storing the value in an int, adding the next letter value to the int.
 // Return the int.
 
+import "strings"
+import "errors"
+
 // Lookup takes a single character (fix this so it refuses multiples, also downcase) and returns its Scrabble score
-func Lookup(s string) int {
+func Lookup(s string) (int, error) {
+	if len(s) != 1 {
+
+		return -1, errors.New("Must be one letter only.")
+
+	}
+
+	strings.ToLower(s)
+
 	switch s {
 	case
 		"a", "e", "i", "o", "u", "l", "n", "r", "s", "t":
-		return 1
+		return 1, nil
 	case
 		"d", "g":
-		return 2
+		return 2, nil
 	case
 		"b", "c", "m", "p":
-		return 3
-	case "f", "h", "v", "w", "y":
-		return 4
-	case "k":
-		return 5
-	case "j", "x":
-		return 8
-	case "q", "z":
-		return 10
+		return 3, nil
+	case
+		"f", "h", "v", "w", "y":
+		return 4, nil
+	case
+		"k":
+		return 5, nil
+	case
+		"j", "x":
+		return 8, nil
+	case
+		"q", "z":
+		return 10, nil
 	}
 }
 
