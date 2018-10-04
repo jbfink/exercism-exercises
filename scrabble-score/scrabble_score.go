@@ -76,6 +76,13 @@ func Lookup(s string) (int, error) {
 		"q", "z":
 		return 10, nil
 	}
+	return 0, nil
+}
+func Strip(i int, err error) int {
+	if err != nil {
+		panic(err)
+	}
+	return i
 }
 
 // Score returns the Scrabble score for a word.
@@ -83,8 +90,10 @@ func Score(word string) int {
 	letter := strings.Split(word, "")
 	score := 0
 	for i := 0; i < len(letter); i++ {
-
-		Lookup(letter)
+		// fix multiple-lookup error:
+		// https://stackoverflow.com/questions/28227095/multiple-values-in-single-value-context
+		score = score + Strip(Lookup(letter[i]))
 
 	}
+	return score
 }
