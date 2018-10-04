@@ -81,6 +81,10 @@ func Lookup(s string) (int, error) {
 // Score returns the Scrabble score for a word.
 func Score(word string) int {
 	letter := strings.Split(word, "")
-	Lookup(letter)
+	score := 0
+	for i := 0; i < len(letter); i++ {
 
+		Lookup(letter)
+
+	}
 }
