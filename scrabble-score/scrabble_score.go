@@ -51,7 +51,7 @@ func Lookup(s string) (int, error) {
 
 	}
 
-	strings.ToLower(s)
+	s = strings.ToLower(s)
 
 	switch s {
 	case
