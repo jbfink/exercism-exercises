@@ -39,6 +39,8 @@ And to total:
 // first, an key-value store array thing for each letter, a=1, d=2 etc. Maybe in its own function, like func Lookup (s string) int
 // Then, split a word into letter chunks. Apply Lookup to each letter, storing the value in an int, adding the next letter value to the int.
 // Return the int.
+
+// Lookup takes a single character (fix this so it refuses multiples, also downcase) and returns its Scrabble score
 func Lookup(s string) int {
 	switch s {
 	case
@@ -61,5 +63,8 @@ func Lookup(s string) int {
 	}
 }
 
-func Score(s string) int {
+// Score returns the Scrabble score for a word.
+func Score(word string) int {
+	Lookup(word)
+
 }
