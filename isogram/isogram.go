@@ -10,5 +10,5 @@ import "strings"
 
 // IsIsogram takes a string input and determines if the string is an isogram.
 func IsIsogram(s string) bool {
-	letters := strings.Split(s, "")
+	letters := []strings.Split(s, "")
 }
