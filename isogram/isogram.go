@@ -10,5 +10,17 @@ import "strings"
 
 // IsIsogram takes a string input and determines if the string is an isogram.
 func IsIsogram(s string) bool {
-	letters := []strings.Split(s, "")
+	// https://www.dotnetperls.com/duplicates-go ??? maybe
+	letters := strings.Split(s, "")
+	encountered := map[letters]bool{}
+
+	for v := range letters {
+		if encountered[letters[v]] == true
+		{	return false }
+			else {
+				return true
+			}
+
+
+}
 }
