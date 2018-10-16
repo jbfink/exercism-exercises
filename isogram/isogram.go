@@ -15,12 +15,13 @@ func IsIsogram(s string) bool {
 	encountered := map[letters]bool{}
 
 	for v := range letters {
-		if encountered[letters[v]] == true
-		{	return false }
-			else {
-				return true
-			}
-
+		if encountered[letters[v]] == true {
+			bool := false  }
+			else  {
+				bool := true
+			
+}
 
 }
+	return bool
 }
