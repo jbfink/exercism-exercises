@@ -12,17 +12,17 @@ import "strings"
 func IsIsogram(s string) bool {
 	// https://www.dotnetperls.com/duplicates-go ??? maybe
 	letters := strings.Split(s, "")
-	encountered := map[letters]bool{}
+	encountered := map[string]bool{}
 
 	for v := range letters {
 		if encountered[letters[v]] == true {
-			bool := false  }
-			else  {
-				bool := true
-			
-}
+			bool := false
+		}
+		{
+			bool := true
 
-}
+		}
+
+	}
 	return bool
-}
 }
