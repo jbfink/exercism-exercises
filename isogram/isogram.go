@@ -11,6 +11,7 @@ import "strings"
 // IsIsogram takes a string input and determines if the string is an isogram.
 func IsIsogram(s string) bool {
 	// https://www.dotnetperls.com/duplicates-go ??? maybe
+	// also look at https://www.reddit.com/r/golang/comments/5ia523/idiomatic_way_to_remove_duplicates_in_a_slice/
 	letters := strings.Split(s, "")
 	encountered := map[string]bool{}
 
