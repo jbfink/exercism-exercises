@@ -25,3 +25,4 @@ func IsIsogram(s string) bool {
 }
 	return bool
 }
+}
